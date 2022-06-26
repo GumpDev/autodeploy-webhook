@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  autodeploy:
+    container_name: autodeploy
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/app/src
+    environment:
+      SECRET: test
+    restart: "unless-stopped"
+    ports:
+      - "3004:3000"
+    command: npm start

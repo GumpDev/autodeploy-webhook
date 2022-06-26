@@ -1,0 +1,7 @@
+[
+  {
+    "id": "test",
+    "path": "D:/gump.dev/gump.dev-api",
+    "command": "docker-compose up -d"
+  }
+]
